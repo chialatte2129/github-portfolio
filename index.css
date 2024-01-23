@@ -413,6 +413,12 @@ body:not(.user-is-tabbing) a:focus {
     font-size: var(--font-size-normal);
 }
 
+@media (pointer: coarse) {
+    .header {
+        background-attachment: inital !important;
+    }
+}
+
 .header__text {
     position: absolute;
     top: 50%;
