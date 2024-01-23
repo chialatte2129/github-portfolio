@@ -409,13 +409,18 @@ body:not(.user-is-tabbing) a:focus {
     height: 100vh;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     font-size: var(--font-size-normal);
 }
 
-@media (pointer: coarse) {
+@media (min-width: 768px) {
     .header {
-        background-attachment: inital !important;
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        background-attachment: scroll;
     }
 }
 
