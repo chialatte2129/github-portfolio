@@ -432,7 +432,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .header__text p {
     margin: 1.5rem 0 3.5rem;
-    max-width: var(--container-medium-width);
+    max-width: var(--container-max-width-width);
     font-family: 'Jost', sans-serif;
     font-size: var(--font-size-medium);
 }
@@ -554,8 +554,14 @@ body:not(.user-is-tabbing) a:focus {
 
 .exp__list {
     /* list-style-type: square; */
-    list-style-position: inside;
+    list-style-type:disc;
+    list-style-position: outside;
+    margin-left:2rem;
     margin-bottom: var(--gutter-normal);
+}
+
+.exp__list li {
+    margin-top: var(--gutter-small);
 }
 
 .exp__code {
@@ -635,7 +641,7 @@ body:not(.user-is-tabbing) a:focus {
 
 @media(min-width: 901px) {
     .about__text {
-        flex: 0 0 35%;
+        flex: 0 0 40%;
     }
     
     .about__photo-container {
